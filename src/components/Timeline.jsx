@@ -50,6 +50,18 @@ const TimelineSection = () => {
       gradient: "from-pink-500 to-rose-500"
     },
     {
+      year: "2025",
+      title: "Data Science & Machine Learning Internship",
+      subtitle: "BrainyBeam Info-Tech Pvt. Ltd.",
+      description: "Built predictive churn models using XGBoost with feature selection and regularization. Conducted EDA and SHAP-based interpretability, and developed a full ML pipeline using MLflow for training, evaluation, and deployment readiness.",
+      icon: Briefcase,
+      color: "blue",
+      date: "May - June 2025",
+      location: "Ahmedabad, Gujarat",
+      tags: ["Data Science", "Machine Learning", "XGBoost", "MLflow"],
+      gradient: "from-blue-500 to-indigo-500"
+    },
+    {
       year: "2026",
       title: "Ready for Industry",
       description: "Armed with hands-on experience in full-stack development and AI systems, ready to contribute to cutting-edge technology teams.",

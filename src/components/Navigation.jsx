@@ -119,7 +119,7 @@ const Navigation = () => {
 
             {/* CTA Button - Desktop */}
             <motion.a
-              href="/resume.pdf" // REPLACE WITH YOUR RESUME LINK
+              href="https://drive.google.com/file/d/1hn0Kvcs11YGCZzWxMIivCcsdRJNRtE4C/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
@@ -172,7 +172,7 @@ const Navigation = () => {
               </motion.button>
             ))}
             <motion.a
-              href="/resume.pdf" // REPLACE WITH YOUR RESUME LINK
+              href="https://drive.google.com/file/d/1hn0Kvcs11YGCZzWxMIivCcsdRJNRtE4C/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               initial={{ opacity: 0, x: -20 }}

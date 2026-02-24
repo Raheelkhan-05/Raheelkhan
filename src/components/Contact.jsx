@@ -15,8 +15,8 @@ const Contact = () => {
       id: 'github',
       name: 'GitHub',
       icon: Github,
-      url: 'https://github.com/yourusername',  // Replace with your GitHub
-      username: '@yourusername',
+      url: 'https://github.com/Raheelkhan-05',
+      username: '@Raheelkhan-05',
       color: 'cyan',
       gradient: 'from-cyan-500 to-blue-500'
     },
@@ -24,8 +24,8 @@ const Contact = () => {
       id: 'linkedin',
       name: 'LinkedIn',
       icon: Linkedin,
-      url: 'https://linkedin.com/in/yourprofile',  // Replace with your LinkedIn
-      username: '/in/yourprofile',
+      url: 'https://www.linkedin.com/in/raheelkhan-lohani',
+      username: '/in/raheelkhan-lohani',
       color: 'violet',
       gradient: 'from-violet-500 to-purple-500'
     },
@@ -33,7 +33,7 @@ const Contact = () => {
       id: 'linkedin',
       name: 'Email',
       icon: Mail,
-      url: 'mailto:your.email@.com',  // Replace with your email
+      url: 'mailto:raheelkhan.work@gmail.com',
       username: 'raheelkhan.work@gmail.com',
       color: 'emerald',
       gradient: 'from-emerald-500 to-teal-500'

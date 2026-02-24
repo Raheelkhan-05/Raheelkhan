@@ -260,9 +260,17 @@ const AboutSection = () => {
               
               <div className="flex flex-wrap gap-3">
                 {[
-                  'React', 'Node.js', 'MongoDB', 'Express',
-                  'TensorFlow', 'PyTorch', 'LangChain', 'OpenAI',
-                  'Docker', 'AWS', 'Git', 'Python'
+                  'Python', 'JavaScript (ES6+)', 'Java', 'C++', 'SQL/MySQL',
+                  'React.js', 'Node.js', 'Express.js', 'Flask',
+                  'MongoDB', 'MySQL', 'Firebase', 'Firebase Firestore',
+                  'REST APIs', 'MVC Architecture', 'JSON',
+                  'TensorFlow', 'PyTorch', 'Scikit-learn', 'XGBoost',
+                  'LangChain', 'Hugging Face', 'SBERT', 'DistilBERT',
+                  'OpenAI', 'Azure OpenAI', 'Prompt Engineering',
+                  'OpenCV', 'COLMAP', 'Instant-NGP', 'NeRF',
+                  'Docker', 'AWS', 'Azure AI Foundry',
+                  'MLflow', 'CI/CD', 'Git', 'GitHub', 'Postman',
+                  'OOP', 'Data Structures', 'Algorithms', 'Complexity Analysis', 'Agile'
                 ].map((tech, index) => (
                   <motion.span
                     key={tech}

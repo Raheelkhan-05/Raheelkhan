@@ -142,14 +142,25 @@ const HeroSection = () => {
             transition={{ delay: 0.9, duration: 0.6 }}
             className="flex flex-wrap gap-4"
           >
-            <button className="group relative px-8 py-4 bg-gradient-to-r from-cyan-500 to-violet-500 rounded-lg font-semibold text-white overflow-hidden transition-all duration-300 hover:shadow-[0_0_30px_rgba(100,255,218,0.5)]">
+            {/* View My Work */}
+            <button
+              onClick={() => {
+                const section = document.getElementById("projects");
+                section?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="group relative px-8 py-4 bg-gradient-to-r from-cyan-500 to-violet-500 rounded-lg font-semibold text-white overflow-hidden transition-all duration-300 hover:shadow-[0_0_30px_rgba(100,255,218,0.5)]"
+            >
               <span className="relative z-10">View My Work</span>
               <div className="absolute inset-0 bg-gradient-to-r from-violet-500 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </button>
-            
-            <button className="px-8 py-4 border-2 border-cyan-500/30 rounded-lg font-semibold text-cyan-300 hover:bg-cyan-500/10 hover:border-cyan-500/50 transition-all duration-300">
+
+            {/* Get In Touch */}
+            <a
+              href="tel:+919428545871"
+              className="px-8 py-4 border-2 border-cyan-500/30 rounded-lg font-semibold text-cyan-300 hover:bg-cyan-500/10 hover:border-cyan-500/50 transition-all duration-300 inline-block"
+            >
               Get In Touch
-            </button>
+            </a>
           </motion.div>
 
           {/* Social Links */}
@@ -160,10 +171,9 @@ const HeroSection = () => {
             className="flex gap-4 pt-4"
           >
             {[
-              { icon: Github, label: "GitHub", href: "#" },
-              { icon: Linkedin, label: "LinkedIn", href: "#" },
-              { icon: Twitter, label: "Twitter", href: "#" },
-              { icon: Mail, label: "Email", href: "#" },
+              { icon: Github, label: "GitHub", href: "https://github.com/Raheelkhan-05" },
+              { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/raheelkhan-lohani" },
+              { icon: Mail, label: "Email", href: "mailto:raheelkhan.work@gmail.com" },
             ].map(({ icon: Icon, label, href }, i) => (
               <a
                 key={label}

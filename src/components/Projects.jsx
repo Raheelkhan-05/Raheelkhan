@@ -36,7 +36,7 @@ const Projects = () => {
         "File upload support for personalized content integration",
         "Vector search for semantic content retrieval"
       ],
-      github: "https://github.com/raheelkhan",
+      github: "https://github.com/Raheelkhan-05/Mentivio",
       demo: "https://mentivio.vercel.app",
       gradient: "from-cyan-500 via-violet-500 to-pink-500",
       accentColor: "cyan"
@@ -65,8 +65,8 @@ const Projects = () => {
         "Interactive search with semantic filtering",
         "Content library of 4600+ TED Talks with metadata"
       ],
-      github: "https://github.com/raheelkhan",
-      demo: "https://tedtalks-recommender.vercel.app",
+      github: "https://github.com/Raheelkhan-05/TedTalks",
+      demo: "https://tedtalks-ml.vercel.app",
       gradient: "from-violet-500 via-purple-500 to-pink-500",
       accentColor: "violet"
     },
@@ -94,8 +94,8 @@ const Projects = () => {
         "Interactive candidate ranking dashboard with filtering",
         "Azure OpenAI GPT-4o integration for natural language understanding"
       ],
-      github: "https://github.com/raheelkhan",
-      demo: "https://resume-screener.vercel.app",
+      github: "https://github.com/Raheelkhan-05/ResumeScreener",
+      demo: "https://resumescreener-hybrid.vercel.app",
       gradient: "from-emerald-500 via-teal-500 to-cyan-500",
       accentColor: "emerald"
     }
