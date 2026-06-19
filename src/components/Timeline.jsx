@@ -14,67 +14,86 @@ const TimelineSection = () => {
 
   const lineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
-  const timelineData = [
-    {
-      year: "2022",
-      title: "Joined Marwadi University",
-      description: "Embarked on my journey in Computer Science & Engineering, diving deep into foundational technologies and system design principles.",
-      icon: GraduationCap,
-      color: "cyan",
-      date: "August 2022",
-      location: "Rajkot, Gujarat",
-      tags: ["B.Tech CSE", "Academics", "Foundation"],
-      gradient: "from-cyan-500 to-blue-500"
-    },
-    {
-      year: "2024",
-      title: "MERN Stack Internship",
-      subtitle: "BrainyBeam Technologies",
-      description: "Built full-stack web applications using MongoDB, Express, React, and Node.js. Delivered scalable solutions and collaborated with cross-functional teams.",
-      icon: Briefcase,
-      color: "violet",
-      date: "June - August 2024",
-      location: "Remote",
-      tags: ["MERN", "Full-Stack", "Production"],
-      gradient: "from-violet-500 to-purple-500"
-    },
-    {
-      year: "2025",
-      title: "AI Projects & Leadership",
-      description: "Led multiple AI/ML projects, from LLM-powered applications to computer vision systems. Mentored peers and organized technical workshops.",
-      icon: Rocket,
-      color: "pink",
-      date: "January 2025",
-      location: "Marwadi University",
-      tags: ["AI/ML", "Leadership", "Innovation"],
-      gradient: "from-pink-500 to-rose-500"
-    },
-    {
-      year: "2025",
-      title: "Data Science & Machine Learning Internship",
-      subtitle: "BrainyBeam Info-Tech Pvt. Ltd.",
-      description: "Built predictive churn models using XGBoost with feature selection and regularization. Conducted EDA and SHAP-based interpretability, and developed a full ML pipeline using MLflow for training, evaluation, and deployment readiness.",
-      icon: Briefcase,
-      color: "blue",
-      date: "May - June 2025",
-      location: "Ahmedabad, Gujarat",
-      tags: ["Data Science", "Machine Learning", "XGBoost", "MLflow"],
-      gradient: "from-blue-500 to-indigo-500"
-    },
-    {
-      year: "2026",
-      title: "Ready for Industry",
-      description: "Armed with hands-on experience in full-stack development and AI systems, ready to contribute to cutting-edge technology teams.",
-      icon: Trophy,
-      color: "emerald",
-      date: "Graduating 2026",
-      location: "Open to Opportunities",
-      tags: ["Career", "Innovation", "Growth"],
-      gradient: "from-emerald-500 to-teal-500",
-      highlight: true
-    }
-  ];
-
+const timelineData = [
+  {
+    year: "2022",
+    title: "Joined Marwadi University",
+    description:
+      "Started my B.Tech in Computer Science & Engineering, building a strong foundation in programming, software engineering, databases, and computer science fundamentals.",
+    icon: GraduationCap,
+    color: "cyan",
+    date: "August 2022",
+    location: "Rajkot, Gujarat",
+    tags: ["B.Tech CSE", "Academics", "Foundation"],
+    gradient: "from-cyan-500 to-blue-500"
+  },
+  {
+    year: "2024",
+    title: "MERN Stack Internship",
+    subtitle: "BrainyBeam Technologies",
+    description:
+      "Built full-stack web applications using MongoDB, Express.js, React, and Node.js. Worked on responsive UIs, REST APIs, authentication systems, and production-ready web applications.",
+    icon: Briefcase,
+    color: "violet",
+    date: "May - June 2024",
+    location: "Ahmedabad, Gujarat",
+    tags: ["MERN", "Full-Stack", "Web Development"],
+    gradient: "from-violet-500 to-purple-500"
+  },
+  {
+    year: "2025",
+    title: "Data Science & Machine Learning Internship",
+    subtitle: "BrainyBeam Info-Tech Pvt. Ltd.",
+    description:
+      "Developed machine learning pipelines using XGBoost, MLflow, SHAP, and advanced feature engineering techniques. Built predictive models and explored model interpretability and deployment workflows.",
+    icon: Briefcase,
+    color: "blue",
+    date: "May - June 2025",
+    location: "Ahmedabad, Gujarat",
+    tags: ["Data Science", "Machine Learning", "MLflow", "XGBoost"],
+    gradient: "from-blue-500 to-indigo-500"
+  },
+  {
+    year: "2026",
+    title: "Graduated with 9.58 CGPA",
+    subtitle: "Marwadi University",
+    description:
+      "Successfully completed B.Tech in Computer Science & Engineering with a CGPA of 9.58, focusing on Software Engineering, AI, Machine Learning, Computer Vision, and Full-Stack Development.",
+    icon: GraduationCap,
+    color: "emerald",
+    date: "February 2026",
+    location: "Rajkot, Gujarat",
+    tags: ["B.Tech", "9.58 CGPA", "Computer Science"],
+    gradient: "from-emerald-500 to-teal-500"
+  },
+  {
+    year: "2026",
+    title: "Software Engineer",
+    subtitle: "CareerLab Consulting Pvt. Ltd.",
+    description:
+      "Worked as a Software Engineer, contributing to web applications, AI-powered solutions, automation workflows, and digital platforms. Gained hands-on experience in client delivery, system design, and product development.",
+    icon: Briefcase,
+    color: "orange",
+    date: "February - June 2026",
+    location: "Remote",
+    tags: ["Software Engineering", "AI", "Automation", "Web Development"],
+    gradient: "from-orange-500 to-red-500"
+  },
+  {
+    year: "2026",
+    title: "Software Engineer",
+    subtitle: "Brand Brigade Pvt. Ltd.",
+    description:
+      "Currently working as a full-time Software Engineer, building AI-powered automation systems, Python-based business solutions, process automation workflows, and scalable software applications for manufacturing and marketing operations.",
+    icon: Rocket,
+    color: "pink",
+    date: "June 2026 - Present",
+    location: "India",
+    tags: ["Python", "AI Automation", "Software Engineering", "Business Systems"],
+    gradient: "from-pink-500 to-rose-500",
+    highlight: true
+  }
+];
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {

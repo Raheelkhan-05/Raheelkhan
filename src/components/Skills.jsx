@@ -11,101 +11,6 @@ const Skills = () => {
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
   const [hoveredModule, setHoveredModule] = useState(null);
 
-  // const skillModules = [
-  //   {
-  //     id: 'backend',
-  //     title: 'Backend',
-  //     icon: Server,
-  //     color: 'cyan',
-  //     gradient: 'from-cyan-500 to-blue-500',
-  //     skills: [
-  //       { name: 'Node.js', level: 'expert' },
-  //       { name: 'Express.js', level: 'expert' },
-  //       { name: 'REST APIs', level: 'expert' },
-  //       { name: 'Flask', level: 'advanced' },
-  //       { name: 'Firebase', level: 'advanced' }
-  //     ],
-  //     connections: ['aiml', 'database']
-  //   },
-  //   {
-  //     id: 'aiml',
-  //     title: 'AI/ML',
-  //     icon: Brain,
-  //     color: 'violet',
-  //     gradient: 'from-violet-500 to-purple-500',
-  //     skills: [
-  //       { name: 'LLMs (GPT, Claude)', level: 'expert' },
-  //       { name: 'Vector Databases', level: 'advanced' },
-  //       { name: 'HuggingFace', level: 'advanced' },
-  //       { name: 'Transformers', level: 'advanced' },
-  //       { name: 'ML Algorithms', level: 'intermediate' }
-  //     ],
-  //     connections: ['backend', 'frontend']
-  //   },
-  //   {
-  //     id: 'frontend',
-  //     title: 'Frontend',
-  //     icon: Layout,
-  //     color: 'emerald',
-  //     gradient: 'from-emerald-500 to-teal-500',
-  //     skills: [
-  //       { name: 'React.js', level: 'expert' },
-  //       { name: 'JavaScript (ES6+)', level: 'expert' },
-  //       { name: 'Tailwind CSS', level: 'expert' },
-  //       { name: 'Framer Motion', level: 'advanced' },
-  //       { name: 'Responsive Design', level: 'expert' }
-  //     ],
-  //     connections: ['backend', 'tools']
-  //   },
-  //   {
-  //     id: 'database',
-  //     title: 'Database',
-  //     icon: Database,
-  //     color: 'pink',
-  //     gradient: 'from-pink-500 to-rose-500',
-  //     skills: [
-  //       { name: 'MongoDB', level: 'expert' },
-  //       { name: 'MySQL', level: 'advanced' },
-  //       { name: 'Firebase Firestore', level: 'advanced' },
-  //       { name: 'SQL', level: 'advanced' },
-  //       { name: 'Database Design', level: 'advanced' }
-  //     ],
-  //     connections: ['backend', 'tools']
-  //   },
-  //   {
-  //     id: 'tools',
-  //     title: 'Tools & Practices',
-  //     icon: Wrench,
-  //     color: 'orange',
-  //     gradient: 'from-orange-500 to-amber-500',
-  //     skills: [
-  //       { name: 'Git/GitHub', level: 'expert' },
-  //       { name: 'Postman', level: 'expert' },
-  //       { name: 'CI/CD', level: 'advanced' },
-  //       { name: 'Agile', level: 'advanced' },
-  //       { name: 'API Testing', level: 'expert' }
-  //     ],
-  //     connections: ['frontend', 'database']
-  //   },
-  //   {
-  //     id: 'core',
-  //     title: 'Core',
-  //     icon: Cpu,
-  //     color: 'yellow',
-  //     gradient: 'from-yellow-500 to-orange-500',
-  //     skills: [
-  //       { name: 'Java', level: 'expert' },
-  //       { name: 'Python', level: 'expert' },
-  //       { name: 'C++', level: 'advanced' },
-  //       { name: 'Data Structures', level: 'expert' },
-  //       { name: 'Algorithms', level: 'expert' },
-  //       { name: 'OOP', level: 'expert' }
-  //     ],
-  //     connections: ['backend', 'aiml']
-  //   }
-  // ];
-
-
   const skillModules = [
   {
     id: 'backend',
@@ -116,12 +21,11 @@ const Skills = () => {
     skills: [
       { name: 'Node.js', level: 'expert' },
       { name: 'Express.js', level: 'expert' },
-      { name: 'REST APIs', level: 'expert' },
+      { name: 'REST API Development', level: 'expert' },
       { name: 'Flask', level: 'advanced' },
-      { name: 'Firebase', level: 'advanced' },
-      { name: 'MVC Architecture', level: 'advanced' },
       { name: 'Authentication & Authorization', level: 'advanced' },
-      { name: 'API Design & Integration', level: 'expert' }
+      { name: 'API Design & Integration', level: 'expert' },
+      { name: 'MVC Architecture', level: 'advanced' }
     ],
     connections: ['aiml', 'database']
   },
@@ -132,14 +36,13 @@ const Skills = () => {
     color: 'violet',
     gradient: 'from-violet-500 to-purple-500',
     skills: [
-      { name: 'TensorFlow', level: 'advanced' },
-      { name: 'PyTorch', level: 'advanced' },
-      { name: 'Scikit-learn', level: 'advanced' },
-      { name: 'XGBoost', level: 'advanced' },
       { name: 'LLMs (GPT, Claude)', level: 'advanced' },
       { name: 'LangChain', level: 'advanced' },
-      { name: 'HuggingFace (Transformers, SBERT, DistilBERT)', level: 'advanced' },
-      { name: 'MLflow & Model Deployment', level: 'advanced' }
+      { name: 'Hugging Face Transformers', level: 'advanced' },
+      { name: 'Scikit-learn', level: 'advanced' },
+      { name: 'XGBoost', level: 'advanced' },
+      { name: 'Prompt Engineering', level: 'advanced' },
+      { name: 'AI Agents & Automation', level: 'advanced' }
     ],
     connections: ['backend', 'frontend']
   },
@@ -151,13 +54,12 @@ const Skills = () => {
     gradient: 'from-emerald-500 to-teal-500',
     skills: [
       { name: 'React.js', level: 'expert' },
-      { name: 'JavaScript (ES6+)', level: 'expert' },
-      { name: 'Next.js', level: 'expert' },
-      { name: 'Typescript', level: 'expert' },
+      { name: 'Next.js', level: 'advanced' },
+      { name: 'TypeScript', level: 'advanced' },
       { name: 'Tailwind CSS', level: 'expert' },
       { name: 'Framer Motion', level: 'advanced' },
-      { name: 'Responsive Design', level: 'expert' },
-      { name: 'State Management', level: 'advanced' }
+      { name: 'Streamlit', level: 'intermediate' },
+      { name: 'Responsive UI Design', level: 'expert' }
     ],
     connections: ['backend', 'tools']
   },
@@ -172,10 +74,8 @@ const Skills = () => {
       { name: 'MySQL', level: 'advanced' },
       { name: 'Firebase Firestore', level: 'advanced' },
       { name: 'SQL', level: 'advanced' },
-      { name: 'Database Design', level: 'advanced' },
-      { name: 'Query Optimization', level: 'advanced' },
-      { name: 'Schema Design', level: 'advanced' },
-      { name: 'JSON Data Handling', level: 'expert' }
+      { name: 'Supabase', level: 'advanced' },
+      { name: 'Database Design', level: 'advanced' }
     ],
     connections: ['backend', 'tools']
   },
@@ -190,9 +90,7 @@ const Skills = () => {
       { name: 'Postman', level: 'expert' },
       { name: 'CI/CD', level: 'advanced' },
       { name: 'Docker', level: 'advanced' },
-      { name: 'AWS', level: 'intermediate' },
       { name: 'Azure AI Foundry', level: 'intermediate' },
-      { name: 'Agile', level: 'advanced' },
       { name: 'API Testing & Debugging', level: 'expert' }
     ],
     connections: ['frontend', 'database']
@@ -204,14 +102,12 @@ const Skills = () => {
     color: 'yellow',
     gradient: 'from-yellow-500 to-orange-500',
     skills: [
-      { name: 'Java', level: 'advanced' },
       { name: 'Python', level: 'expert' },
+      { name: 'JavaScript', level: 'expert' },
       { name: 'C++', level: 'advanced' },
-      { name: 'Data Structures', level: 'expert' },
-      { name: 'Algorithms', level: 'advanced' },
-      { name: 'OOP', level: 'expert' },
-      { name: 'Complexity Analysis', level: 'advanced' },
-      { name: 'Problem Solving', level: 'expert' }
+      { name: 'Data Structures & Algorithms', level: 'expert' },
+      { name: 'Object-Oriented Programming', level: 'expert' },
+      { name: 'Problem Solving', level: 'expert' },
     ],
     connections: ['backend', 'aiml']
   }

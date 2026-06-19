@@ -29,10 +29,10 @@ const Achievements = () => {
     {
       id: 2,
       command: 'check degree_completion --status',
-      output: 'CGPA: 9.63/10.0 (B.Tech)',
+      output: 'CGPA: 9.58/10.0 (B.Tech)',
       icon: Trophy,
       color: 'emerald',
-      description: 'Graduated in B.Tech in Computer Engineering with 9.63 CGPA'
+      description: 'Graduated in B.Tech in Computer Engineering with 9.58 CGPA'
     },
     {
       id: 3,

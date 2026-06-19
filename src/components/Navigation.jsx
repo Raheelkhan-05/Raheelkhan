@@ -119,7 +119,7 @@ const Navigation = () => {
 
             {/* CTA Button - Desktop */}
             <motion.a
-              href="https://drive.google.com/file/d/1hn0Kvcs11YGCZzWxMIivCcsdRJNRtE4C/view?usp=sharing"
+              href="https://drive.google.com/file/d/1zYPY2h1nc7-NigVli_R0J26PMv9EmZeY/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
@@ -172,7 +172,7 @@ const Navigation = () => {
               </motion.button>
             ))}
             <motion.a
-              href="https://drive.google.com/file/d/1hn0Kvcs11YGCZzWxMIivCcsdRJNRtE4C/view?usp=sharing"
+              href="https://drive.google.com/file/d/1zYPY2h1nc7-NigVli_R0J26PMv9EmZeY/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               initial={{ opacity: 0, x: -20 }}

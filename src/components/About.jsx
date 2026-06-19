@@ -251,38 +251,73 @@ const AboutSection = () => {
             className="relative"
           >
             <div className="bg-[#0f0f17]/50 backdrop-blur-xl border border-cyan-500/10 rounded-xl p-8">
-              <div className="flex items-center gap-3 mb-6">
+              <div className="flex items-center gap-3 mb-8">
                 <Code2 className="w-5 h-5 text-violet-400" />
                 <h3 className="text-xl font-semibold text-white" style={{ fontFamily: '"Space Grotesk", sans-serif' }}>
                   Tech Arsenal
                 </h3>
               </div>
-              
-              <div className="flex flex-wrap gap-3">
+
+              <div className="space-y-7">
                 {[
-                  'Python', 'JavaScript (ES6+)', 'Java', 'C++', 'SQL/MySQL',
-                  'React.js', 'Node.js', 'Express.js', 'Flask',
-                  'MongoDB', 'MySQL', 'Firebase', 'Firebase Firestore',
-                  'REST APIs', 'MVC Architecture', 'JSON',
-                  'TensorFlow', 'PyTorch', 'Scikit-learn', 'XGBoost',
-                  'LangChain', 'Hugging Face', 'SBERT', 'DistilBERT',
-                  'OpenAI', 'Azure OpenAI', 'Prompt Engineering',
-                  'OpenCV', 'COLMAP', 'Instant-NGP', 'NeRF',
-                  'Docker', 'AWS', 'Azure AI Foundry',
-                  'MLflow', 'CI/CD', 'Git', 'GitHub', 'Postman',
-                  'OOP', 'Data Structures', 'Algorithms', 'Complexity Analysis', 'Agile'
-                ].map((tech, index) => (
-                  <motion.span
-                    key={tech}
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
-                    transition={{ delay: 0.8 + (index * 0.05), duration: 0.3 }}
-                    whileHover={{ scale: 1.1, y: -2 }}
-                    className="px-4 py-2 bg-gradient-to-r from-cyan-500/10 to-violet-500/10 border border-cyan-500/20 hover:border-cyan-500/40 rounded-lg text-cyan-300 text-sm font-medium cursor-default transition-all duration-200 hover:shadow-[0_0_15px_rgba(100,255,218,0.2)]"
-                  >
-                    {tech}
-                  </motion.span>
-                ))}
+                  {
+                    label: 'MERN Stack',
+                    accent: 'cyan',
+                    items: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'REST APIs']
+                  },
+                  {
+                    label: 'AI / ML (Python)',
+                    accent: 'violet',
+                    items: ['Python', 'PyTorch', 'TensorFlow', 'Scikit-learn', 'LangChain', 'Hugging Face']
+                  },
+                  {
+                    label: 'CS Fundamentals',
+                    accent: 'emerald',
+                    items: ['C++', 'Data Structures', 'Algorithms', 'OOP']
+                  },
+                  {
+                    label: 'Tooling',
+                    accent: 'amber',
+                    items: ['Docker', 'Git', 'AWS']
+                  }
+                ].map((group, groupIndex) => {
+                  const accentClasses = {
+                    cyan: { dot: 'bg-cyan-400', text: 'text-cyan-300', border: 'border-cyan-500/20 hover:border-cyan-500/40', glow: 'hover:shadow-[0_0_15px_rgba(34,211,238,0.2)]' },
+                    violet: { dot: 'bg-violet-400', text: 'text-violet-300', border: 'border-violet-500/20 hover:border-violet-500/40', glow: 'hover:shadow-[0_0_15px_rgba(167,139,250,0.2)]' },
+                    emerald: { dot: 'bg-emerald-400', text: 'text-emerald-300', border: 'border-emerald-500/20 hover:border-emerald-500/40', glow: 'hover:shadow-[0_0_15px_rgba(52,211,153,0.2)]' },
+                    amber: { dot: 'bg-amber-400', text: 'text-amber-300', border: 'border-amber-500/20 hover:border-amber-500/40', glow: 'hover:shadow-[0_0_15px_rgba(251,191,36,0.2)]' }
+                  }[group.accent];
+
+                  return (
+                    <motion.div
+                      key={group.label}
+                      initial={{ opacity: 0, y: 12 }}
+                      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 12 }}
+                      transition={{ delay: 0.6 + groupIndex * 0.12, duration: 0.4 }}
+                    >
+                      <div className="flex items-center gap-2 mb-3">
+                        <span className={`w-1.5 h-1.5 rounded-full ${accentClasses.dot}`} />
+                        <span className="text-gray-500 text-xs font-semibold uppercase tracking-wider">
+                          {group.label}
+                        </span>
+                      </div>
+                      <div className="flex flex-wrap gap-3">
+                        {group.items.map((tech, index) => (
+                          <motion.span
+                            key={tech}
+                            initial={{ opacity: 0, scale: 0.8 }}
+                            animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
+                            transition={{ delay: 0.7 + groupIndex * 0.12 + index * 0.05, duration: 0.3 }}
+                            whileHover={{ scale: 1.1, y: -2 }}
+                            className={`px-4 py-2 bg-gradient-to-r from-cyan-500/10 to-violet-500/10 border ${accentClasses.border} rounded-lg ${accentClasses.text} text-sm font-medium cursor-default transition-all duration-200 ${accentClasses.glow}`}
+                          >
+                            {tech}
+                          </motion.span>
+                        ))}
+                      </div>
+                    </motion.div>
+                  );
+                })}
               </div>
             </div>
           </motion.div>
